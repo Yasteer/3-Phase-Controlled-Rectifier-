@@ -22,7 +22,7 @@ where:
 ---
 
 ### 1.2 Circuit Configuration
-The supply to the circuit shall mimic the typical South African three phase supply - three phases at 50Hz, 120 degrees apart, with an amplitude of 230V.
+The supply to the circuit shall mimic the typical South-African three phase supply - three phases at 50Hz, 120 degrees apart, with an amplitude of 230V.
 
 ![Three Phase Supply](Pictures/Supply.PNG)
 
@@ -34,17 +34,21 @@ Each phase connects to two thyristors:
 - **Upper group:** T1, T3, T5  
 - **Lower group:** T4, T6, T2  
 
-At any instant, **one device from the upper group** and **one from the lower group** conduct together for 120°.  
-Commutation occurs every 60°, so conduction pairs change in the following order:
+At any instant, **one device from the upper group** and **one from the lower group** conduct together for 120°.
+The conducting upper group device will be the one with the highest insantaneous voltage and the lower group device will be the one with the lowest instantaneous voltage.
+
+Note from the supply diagram that in a 120 degree window, one phase has the highest insantaneous voltage but the other two phases have different periods of having the lowest insantaneous voltage. 
+
+Commutation occurs every 60° as a result, so conduction pairs change in the following order:
 
 | Interval (°) | Upper SCR | Lower SCR | Conducting Lines |
 |---------------|------------|------------|------------------|
-| 0–60° | T1 | T6 | R⁺ & Y⁻ |
-| 60–120° | T1 | T2 | R⁺ & B⁻ |
-| 120–180° | T3 | T2 | Y⁺ & B⁻ |
-| 180–240° | T3 | T4 | Y⁺ & R⁻ |
-| 240–300° | T5 | T4 | B⁺ & R⁻ |
-| 300–360° | T5 | T6 | B⁺ & Y⁻ |
+| 30–90° | T1 | T6 | R⁺ & B⁻ |
+| 90–150° | T1 | T2 | R⁺ & Y⁻ |
+| 150–210° | T3 | T2 | B⁺ & Y⁻ |
+| 210–270° | T3 | T4 | B⁺ & R⁻ |
+| 270–330° | T5 | T4 | Y⁺ & R⁻ |
+| 330–390° | T5 | T6 | Y⁺ & B⁻ |
 
 ---
 
