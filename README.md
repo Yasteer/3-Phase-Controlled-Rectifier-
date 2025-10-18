@@ -69,6 +69,7 @@ Commutation occurs every 60° as a result, so conduction pairs change in the fol
 | Commutation | Natural | Occurs every 60° |
 | Control Method | Phase Control | Gate pulses synchronized with supply |
 
+Note that Ripple Frequency can be improved by adding more circuits in series to the current one with the caveat being that a phase shift must be applied to the supply. 
 ---
 
 ## 🧪 2. Future Work
@@ -91,9 +92,6 @@ Commutation occurs every 60° as a result, so conduction pairs change in the fol
 
 ## 📘 References
 1. Mohan, Undeland, Robbins — *Power Electronics: Converters, Applications, and Design*  
-2. Rashid — *Power Electronics: Circuits, Devices, and Applications*  
-3. IEC & IEEE documentation on SCR control techniques  
-
 ---
 
 ## 🧑‍🔬 Author
