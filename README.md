@@ -22,6 +22,12 @@ where:
 ---
 
 ### 1.2 Circuit Configuration
+The supply to the circuit shall mimic the typical South African three phase supply - three phases at 50Hz, 120 degrees apart, with an amplitude of 230V.
+
+![Three Phase Supply](Pictures/Supply.PNG)
+
+The electronics circuit looks the same as the three-phase diode bridge rectifier circuit but all of the diodes have been replaced with SCRs (thyristors).
+
 ![Three Phase Supply](Pictures/circuit.png)
 
 Each phase connects to two thyristors:
