@@ -28,7 +28,7 @@ The supply to the circuit shall mimic the typical South African three phase supp
 
 The electronics circuit looks the same as the three-phase diode bridge rectifier circuit but all of the diodes have been replaced with SCRs (thyristors).
 
-![Three Phase Supply](Pictures/circuit.png)
+![Three Phase Supply](Pictures/Circuit.png)
 
 Each phase connects to two thyristors:
 - **Upper group:** T1, T3, T5  
