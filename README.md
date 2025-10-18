@@ -22,6 +22,7 @@ where:
 ---
 
 ### 1.2 Circuit Configuration
+![Three Phase Supply](Pictures/circuit.png)
 
 Each phase connects to two thyristors:
 - **Upper group:** T1, T3, T5  
